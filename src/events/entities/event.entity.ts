@@ -1,1 +1,1 @@
-export class Event {}
+export class EventEntity {}
