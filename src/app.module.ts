@@ -16,7 +16,7 @@ import { EventsModule } from './events/events.module';
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => {
-        console.log('DEBUG DB ', configService.get<string>('database.mongo'))
+        //console.log('DEBUG DB ', configService.get<string>('database.mongo'))
         return {
           uri: configService.get<string>('database.mongo'),
           loggerlevel: 'debug',
