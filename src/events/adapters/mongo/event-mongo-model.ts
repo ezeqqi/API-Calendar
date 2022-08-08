@@ -13,6 +13,10 @@ export class Event {
 
     @Prop({required: true})
     description: string;
+
+    @Prop({required: true})
+    isHoliday: boolean;
+
 }
 
 export const EventSchema = SchemaFactory.createForClass(Event);
